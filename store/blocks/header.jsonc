@@ -7,7 +7,20 @@
   },
   "header-layout.desktop": {
     "children": [
-      "sticky-layout#desktop"
+      "sticky-layout#desktop",
+      "flex-layout.row#nav" //barra de navegação das páginas
+    ]
+  },
+  "flex-layout.row#nav": { // criação da barra de navegação das páginas
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "left",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#menu" //liga com a barra de menu de navegação que está no menu.jsonc
     ]
   },
   "sticky-layout#desktop": {
@@ -48,7 +61,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
       "width": "80"
     }
   },
