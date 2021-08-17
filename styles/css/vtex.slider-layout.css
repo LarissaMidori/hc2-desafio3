@@ -1,0 +1,27 @@
+
+.sliderLayoutContainer { /* fundo do slider - total*/
+    display: flex;
+    background: #303030;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    width: 920px;
+    border-radius: 20px;
+}
+
+.slideChildrenContainer { /* area de conteudo que queremos usar para colocar as imagens */
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #fff;
+
+}
+.paginationDot {
+    background: #6e6e6e;
+}
+
+.paginationDot--isActive {
+    background: #59ff00;
+}
+
