@@ -1,0 +1,12 @@
+.listItem :global(.vtex-button) {
+    background:#212121; /* cor de fundo do botao ativo */
+    border: none;
+    color: #fff; /* cor de fundo da letra do botao ativo */
+    font-size: 14px;
+}
+.listItemActive :global(.vtex-button) {
+    background:#212121; /* cor de fundo do botao ativo */
+    border: none;
+    color: #59ff00; /* cor de fundo da letra do botao ativo */
+    font-size: 14px;
+}

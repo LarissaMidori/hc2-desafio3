@@ -8,8 +8,21 @@
   "header-layout.desktop": {
     "children": [
       "sticky-layout#desktop",
-      "flex-layout.row#nav" //barra de navegação das páginas
+      "flex-layout.row#tab-layout"
     ]
+  },
+  "flex-layout.row#tab-layout": {
+    "props": {
+      "blockClass": "tab-layout", /* serve para modificar o css no vtex.flex-layout.css */
+      "horizontalAlign": "left",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.tab-layout@0.x:tab-layout#menu"
+    ]
+    
   },
   "flex-layout.row#nav": { // criação da barra de navegação das páginas
     "props": {
@@ -41,8 +54,8 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
+      /* "locale-switcher",
+      "login", */
       "minicart.v2"
     ]
   },
@@ -62,7 +75,7 @@
       "title": "Logo",
       "href": "/",
       "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
-      "width": "80"
+      "width": "130"
     }
   },
   "header-layout.mobile": {
