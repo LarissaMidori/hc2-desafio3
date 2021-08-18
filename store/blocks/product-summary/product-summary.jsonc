@@ -1,0 +1,11 @@
+{
+    "product-summary.shelf#1": {
+        "children": [
+          "stack-layout#prodsum", /* mostra as imagens no slider dos produtos */
+          "product-summary-name",
+          "product-summary-price",
+          "product-summary-space",
+          "add-to-cart-button"
+        ]
+      }
+}

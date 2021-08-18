@@ -2,11 +2,10 @@
   "store.home": { 
     "blocks": [
       "flex-layout.row#slider",
-      "rich-text",
       "flex-layout.row#shelf"
     ]
   },
-  "flex-layout.row#slider": {
+  "flex-layout.row#slider": { /* SLIDER BANNER */
     "children": ["slider-layout#principal"],
     "props": {
       "horizontalAlign": "center",
@@ -15,24 +14,5 @@
       "preventVerticalStretch": true,
       "fullWidth": true
     }
-  },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
   }
-  /* "list-context.product-list#1": {
-    "blocks": ["product-summary.shelf#1"]
-  },
-  "product-summary.shelf#1": {
-    "children": [
-      "product-summary-image",
-      "product-summary-name",
-      "product-summary-price",
-      "product-summary-buy-button"
-    ]
-  } */
 }

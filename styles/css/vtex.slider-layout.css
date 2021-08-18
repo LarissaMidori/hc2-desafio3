@@ -1,5 +1,6 @@
+/* ======= SLIDER-LAYOUT DOS BANNERS =====*/
 
-.sliderLayoutContainer { /* fundo do slider - total*/
+.sliderLayoutContainer--carousel { /* fundo do slider - total*/
     display: flex;
     background: #303030;
     align-items: center;
@@ -10,7 +11,7 @@
     padding-bottom: 40px;
 }
 
-.slideChildrenContainer { /* area de conteudo que queremos usar para colocar as imagens */
+.slideChildrenContainer--carousel { /* area de conteudo que queremos usar para colocar as imagens */
     cursor: pointer;
     display: flex;
     overflow: hidden;
@@ -19,16 +20,36 @@
     border-radius: 20px;
     background: #fff;
 }
-.paginationDot {
+.paginationDot--carousel {
     background: #6e6e6e;
 }
 
-.paginationDot--isActive {
+.paginationDot--isActive--carousel {
     background: #59ff00;
 }
 
-.sliderArrows {
+.sliderArrows--carousel {
     padding-top: 370px;
     color: #fff;
+}
+
+/* ======= SLIDER-LAYOUT DOS PRODUTOS =====*/
+
+.sliderLayoutContainer--shelf { /* fundo do slider - total*/
+    display: flex;
+    background: #8d2a2a;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+}
+
+.slideChildrenContainer--shelf  { /* area de conteudo que queremos usar para colocar as imagens */
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    height: 500px;
+    width: 400px;
+    background: #fff;
 }
 
