@@ -14,7 +14,7 @@
   "flex-layout.row#tab-layout": {
     "props": {
       "blockClass": "tab-layout", /* serve para modificar o css no vtex.flex-layout.css */
-      "horizontalAlign": "left",
+      "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
