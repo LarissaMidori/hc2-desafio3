@@ -2,7 +2,8 @@
   "store.home": { 
     "blocks": [
       "flex-layout.row#slider",
-      "flex-layout.row#shelf"
+      "search-result-layout.customQuery#home"
+      /*vtex log"flex-layout.row#produtos" */
     ]
   },
   "flex-layout.row#slider": { /* SLIDER BANNER */
@@ -14,5 +15,55 @@
       "preventVerticalStretch": true,
       "fullWidth": true
     }
-  }
+  },/* ,
+  "flex-layout.row#produtos": {
+    "blocks": ["product-list#1"]
+  } */
+  "search-result-layout.customQuery#home": {
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 3,
+        "queryField": "Kit UpMedal"
+        /* "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip" */
+      }
+    }
+  }/* ,
+  "store.search#category": {
+     "blocks": ["search-result-layout"],
+     "props": {
+         "context": {
+             "skusFilter": "FIRST_AVAILABLE",
+             "simulationBehavior": "skip"
+         }
+      }
+   },
+   "store.search#brand": {
+     "blocks": ["search-result-layout"],
+     "props": {
+         "context": {
+             "skusFilter": "FIRST_AVAILABLE",
+             "simulationBehavior": "skip"
+         }
+      }
+   },
+   "store.search#department": {
+     "blocks": ["search-result-layout"],
+     "props": {
+         "context": {
+             "skusFilter": "FIRST_AVAILABLE",
+             "simulationBehavior": "skip"
+         }
+      }
+   },
+   "store.search#subcategory": {
+     "blocks": ["search-result-layout"],
+     "props": {
+         "context": {
+             "skusFilter": "FIRST_AVAILABLE",
+             "simulationBehavior": "skip"
+         }
+      }
+   } */
+
 }
