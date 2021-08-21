@@ -9,5 +9,60 @@
       "showNavigationArrows": true,
       "showPaginationDots": true
     }
-  }
+  },
+  
+    "vtex.product-highlights@2.x:product-highlights": {
+      "props": {
+        "type": "teaser",
+        "filter": {
+          "type": "show",
+          "highlightNames": ["10% Boleto"]
+        }
+      },
+      "children": ["product-highlight-text"]
+    },
+    "product-highlight-text": {
+      "props": {
+        "message": "{highlightName}",
+        "blockClass": "boleto"
+      }
+    },
+    "add-to-cart-button#home": {
+      "props": {
+        "onClickBehavior": "go-to-product-page",
+        "text": "Ver detalhes",
+        "blockClass": "cart"
+      }
+    },
+    "modal-trigger#home": {
+      "children": [
+        "rich-text#home",
+        "modal-layout#home"
+      ],
+      "props": {
+        "blockClass": "video-click"
+      }
+    },
+    "rich-text#home": {
+      "props": {
+        "text": "Click me"
+      }
+    },
+    "modal-layout#home": {
+      "children": [
+        "video#home"
+      ]
+    },
+    "video#home": {
+      "props": {
+        "width": "100%",
+      "height": "600px",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false,
+      "src": "https://youtu.be/vVNF4OASRDI",
+      "blockClass": "video-upmedal"
+      }
+    }
+  
 }

@@ -1,3 +1,17 @@
+/* ==== HEADER - TAB-LAYOUT*/
 .flexRow--tab-layout{ /* mudar a cor da barra do tab-layout */
     background:#212121;
+  }
+
+/* ==== COR DE FUNDO DO SLIDER ==== */
+
+.flexRowContent--slider {
+  background: #303030;
+}
+
+  /* ==== FOOTER ==== */
+
+  .flexRow--rodape {
+    background: #424242;
+    
   }

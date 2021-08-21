@@ -14,13 +14,93 @@
   },
   "flex-layout.row#footer": { 
     "children": [
-      "image"
-    ]
-  },
-  "image": {
+      "flex-layout.col#user",
+      "flex-layout.col#desafios",
+      "flex-layout.col#loja",
+      "flex-layout.col#suporte"
+    ],
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "blockClass": "rodape"
+    }
+  },
+  "flex-layout.col#user":{
+    "children": ["image#user", "rich-text#user"],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "image#user": {
+    "props": {
+      "width": 24,
+      "src": "assets/user.svg",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#user": {
+    "props": {
+      "text": "ENTRAR",
+      "blockClass": "footer"
+    }
+  },
+  "flex-layout.col#desafios":{
+    "children": ["image#desafios", "rich-text#desafios"],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "image#desafios": {
+    "props": {
+      "width": 24,
+      "src": "assets/desafio.svg",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#desafios": {
+    "props": {
+      "text": "DESAFIOS",
+      "blockClass": "footer"
+    }
+  },
+  "flex-layout.col#loja":{
+    "children": ["image#loja", "rich-text#loja"],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "image#loja": {
+    "props": {
+      "width": 24,
+      "src": "assets/loja.svg",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#loja": {
+    "props": {
+      "text": "LOJA",
+      "blockClass": "footer"
+    }
+  },
+  "flex-layout.col#suporte":{
+    "children": ["image#suporte", "rich-text#suporte"],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "image#suporte": {
+    "props": {
+      "width": 24,
+      "src": "assets/whats.svg",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#suporte": {
+    "props": {
+      "text": "SUPORTE",
+      "blockClass": "footer"
     }
   }
 }

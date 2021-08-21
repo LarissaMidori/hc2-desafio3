@@ -1,5 +1,29 @@
-:global(.vtex-store__template) { /* cor do fundo da pagina */
-    background: #303030;
+/* :global(.vtex-store__template) { */ /* cor do fundo da pagina */
+  /*   background: #303030;
+} */
+.container { /* CONTAINER COM OS CARDS DOS PRODUTOS */
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageElement--footer {
+  margin-top: 5px;
+}
+/*==== PREÇOS NOS CARDS DE PRODUTOS ==== */
+.sellingPrice{
+  color: #59ff00; /* VERDE CLARO */
+}
+.listPrice { /* MOSTRA O VALOR ANTIGO */
+  color: #fff;
+}
+.installmentsPrice { /* MOSTRA A COR DA FONTE DE VALOR PARCELADO */
+  color: #fff; 
 }
 
 
+
+.productNameContainer {
+  color:fff;
+}

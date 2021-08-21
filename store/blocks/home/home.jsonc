@@ -1,8 +1,8 @@
 {
   "store.home": { 
     "blocks": [
-      "flex-layout.row#slider",
-      "search-result-layout.customQuery#home"
+      "flex-layout.row#slider"/* ,
+      "search-result-layout.customQuery#home" */
     ]
   },
   "flex-layout.row#slider": { /* SLIDER BANNER */
@@ -12,13 +12,14 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "slider"
     }
   },
   "search-result-layout.customQuery#home": { /* search-result na home */
     "props": {
       "querySchema": {
-        "maxItemsPerPage": 8,
+        "maxItemsPerPage": 20,
         "skusFilter": "FIRST_AVAILABLE",
         "simulationBehavior": "skip" ,
         "queryField": "20",
@@ -46,10 +47,10 @@
           "name": "grid",
           "component": "GridSummary",
           "itemsPerRow": {
-            "(min-width:1300px)": 4,
-            "desktop": 3,
-            "tablet": 3,
-            "phone": 2
+            "(min-width:1300px)": 2,
+            "desktop": 2,
+            "tablet": 2,
+            "phone": 1
           }
         },
         {
@@ -62,6 +63,5 @@
       "GridSummary": "product-summary.shelf#home"
     }
   }
-  
 
 }

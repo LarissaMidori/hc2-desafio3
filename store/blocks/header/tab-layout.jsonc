@@ -1,11 +1,12 @@
 {
     "vtex.tab-layout@0.x:tab-layout#menu": {
         "children": [
-            "tab-list#menu"
+            "tab-list#menu",
+            "tab-content#menu"
         ],
         "props": {
             "blockClass": "menu",
-            "defaultActiveTabId": "menu1"
+            "defaultActiveTabId": "promocoes" 
         }
     },
     "tab-list#menu": {
@@ -27,20 +28,20 @@
          },
          "tab-list.item#promocoes": {
        "props": {
-             "tabId": "menu1",
+             "tabId": "promocoes",
              "label": "PROMOÇÕES"
-         /* "blockClass": "lista" */
            }
          },
          "tab-list.item#corinthians": {
            "props": {
-             "tabId": "menu2",
+             "tabId": "corinthians",
              "label": "CORINTHIANS"
+
            }
          },
          "tab-list.item#palmeiras": {
           "props": {
-            "tabId": "menu3",
+            "tabId": "palmeiras",
             "label": "PALMEIRAS"
           }
         },
@@ -85,6 +86,14 @@
             "tabId": "menu10",
             "label": "ÁLBUM 3"
           }
+        },
+        "tab-content#menu": {
+          "children": [
+            "tab-content.item#corinthians"
+          ]
+        },
+        "tab-content.item#corinthians": {
+          "children": ["search-result-layout.customQuery#home"]
         }
              
 }

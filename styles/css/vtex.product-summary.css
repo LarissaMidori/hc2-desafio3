@@ -1,10 +1,14 @@
 
-.galleryItem {
+/* .brandName--summary {
+    color:fff;
+} */
+
+.nameContainer {
+    color:fff;
+}
+
+.container--summary { /* CARD DO PRODUTO */
     background: #424242;
     /* margin-left: 300px;
     margin-right: 250px; */
-}
-
-.productBrand {
-    color:fff;
 }
