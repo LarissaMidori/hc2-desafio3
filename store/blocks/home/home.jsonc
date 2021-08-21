@@ -1,11 +1,11 @@
 {
   "store.home": { 
     "blocks": [
-      "flex-layout.row#slider",
-      "search-result-layout.customQuery#home"
-      /*vtex log"flex-layout.row#produtos" */
+      "flex-layout.row#slider"
+
     ]
   },
+  
   "flex-layout.row#slider": { /* SLIDER BANNER */
     "children": ["slider-layout#principal"],
     "props": {
@@ -15,55 +15,39 @@
       "preventVerticalStretch": true,
       "fullWidth": true
     }
-  },/* ,
-  "flex-layout.row#produtos": {
-    "blocks": ["product-list#1"]
-  } */
-  "search-result-layout.customQuery#home": {
+  }/* ,
+  "flex-layout.row#search": {
+    "children": [ */
+      /* "list-context.product-list#home" */
+  /*     "store.custom#home"
+    ]
+  }, */
+  /* "store.custom#home": {
+    "blocks":["search-result-layout.customQuery#hom"]
+  }, */
+  /* "list-context.product-list#home": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["search-result-layout.customQuery#home"],
     "props": {
+      "category": "9",
+      "bloclass": "produtos"
+    }
+  }, */
+  /* "search-result-layout.customQuery#hom": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ], */
+    /* "props": {
       "querySchema": {
-        "maxItemsPerPage": 3,
-        "queryField": "Kit UpMedal"
+        "maxItemsPerPage": 8, */
         /* "skusFilter": "FIRST_AVAILABLE",
-        "simulationBehavior": "skip" */
+        "simulationBehavior": "skip" ,  */
+        /* "queryField": 140,
+        "mapField": "productClusterIds"
       }
     }
-  }/* ,
-  "store.search#category": {
-     "blocks": ["search-result-layout"],
-     "props": {
-         "context": {
-             "skusFilter": "FIRST_AVAILABLE",
-             "simulationBehavior": "skip"
-         }
-      }
-   },
-   "store.search#brand": {
-     "blocks": ["search-result-layout"],
-     "props": {
-         "context": {
-             "skusFilter": "FIRST_AVAILABLE",
-             "simulationBehavior": "skip"
-         }
-      }
-   },
-   "store.search#department": {
-     "blocks": ["search-result-layout"],
-     "props": {
-         "context": {
-             "skusFilter": "FIRST_AVAILABLE",
-             "simulationBehavior": "skip"
-         }
-      }
-   },
-   "store.search#subcategory": {
-     "blocks": ["search-result-layout"],
-     "props": {
-         "context": {
-             "skusFilter": "FIRST_AVAILABLE",
-             "simulationBehavior": "skip"
-         }
-      }
-   } */
+  } */
 
 }

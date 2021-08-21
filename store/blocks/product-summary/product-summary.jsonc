@@ -1,12 +1,17 @@
 {
-     "product-summary.shelf#home": {
-        "children": [
-          "stack-layout#upmedal", /* mostra as imagens no slider dos produtos de tal colecao */
-          "product-summary-name",
-          "flex-layout.col#productRating", /* avaliacao estrelas */
-          "product-summary-price",
-          "flex-layout.row#selling-price-savings", /* preco com desconto */
-          "add-to-cart-button"
+     /* "product-summary.shelf#home": {  *//* block que contem a estrutura necessaria para seus componentes */
+        /* "children": [
+          "product-summary-name", */
+          /* "flex-layout.col#productRating", */ /* avaliacao estrelas */
+         /*  "product-summary-price",
+          "product-rating-inline", */
+          /* "flex-layout.row#selling-price-savings", */ /* preco com desconto */
+       /*    "add-to-cart-button"
         ]
-      }
+      } */
+      /* "list-context.product-list#home": {
+        "blocks": ["product-summary.shelf#home"],
+      "children": ["search-result-layout.customQuery#home"]
+      } */
 }
+
