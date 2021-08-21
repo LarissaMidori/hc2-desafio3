@@ -32,3 +32,24 @@
     padding-top: 370px;
     color: #fff;
 }
+
+/* ======= SLIDER-LAYOUT DOS PRODUTOS =====*/
+
+.sliderLayoutContainer--shelf { /* fundo do slider - total*/
+    display: flex;
+    background: #8d2a2a;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+}
+
+.slideChildrenContainer--shelf  { /* area de conteudo que queremos usar para colocar as imagens */
+    cursor: pointer;
+    display: flex;
+    overflow: hidden;
+    height: 500px;
+    width: 400px;
+    background: #fff;
+}
+
