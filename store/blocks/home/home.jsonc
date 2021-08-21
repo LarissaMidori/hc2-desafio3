@@ -3,7 +3,6 @@
     "blocks": [
       "flex-layout.row#slider",
       "search-result-layout.customQuery#home"
-      /*vtex log"flex-layout.row#produtos" */
     ]
   },
   "flex-layout.row#slider": { /* SLIDER BANNER */
@@ -15,55 +14,54 @@
       "preventVerticalStretch": true,
       "fullWidth": true
     }
-  },/* ,
-  "flex-layout.row#produtos": {
-    "blocks": ["product-list#1"]
-  } */
-  "search-result-layout.customQuery#home": {
+  },
+  "search-result-layout.customQuery#home": { /* search-result na home */
     "props": {
       "querySchema": {
-        "maxItemsPerPage": 3,
-        "queryField": "Kit UpMedal"
-        /* "skusFilter": "FIRST_AVAILABLE",
-        "simulationBehavior": "skip" */
+        "maxItemsPerPage": 8,
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip" ,
+        "queryField": "20",
+        "mapField": "c" 
       }
+    },
+    "blocks": ["search-result-layout.desktop#home"]
+  },
+  "search-result-layout.desktop#home" : {
+    "children":["flex-layout.row#result"],
+    "props": {
+      "preventRouteChange": true
     }
-  }/* ,
-  "store.search#category": {
-     "blocks": ["search-result-layout"],
-     "props": {
-         "context": {
-             "skusFilter": "FIRST_AVAILABLE",
-             "simulationBehavior": "skip"
-         }
-      }
-   },
-   "store.search#brand": {
-     "blocks": ["search-result-layout"],
-     "props": {
-         "context": {
-             "skusFilter": "FIRST_AVAILABLE",
-             "simulationBehavior": "skip"
-         }
-      }
-   },
-   "store.search#department": {
-     "blocks": ["search-result-layout"],
-     "props": {
-         "context": {
-             "skusFilter": "FIRST_AVAILABLE",
-             "simulationBehavior": "skip"
-         }
-      }
-   },
-   "store.search#subcategory": {
-     "blocks": ["search-result-layout"],
-     "props": {
-         "context": {
-             "skusFilter": "FIRST_AVAILABLE",
-             "simulationBehavior": "skip"
-         }
-      }
-   } */
+  },
+  "flex-layout.row#result": {
+    "children": ["search-content#home"]
+  },
+  "search-content#home": {
+    "blocks": ["gallery#home", "not-found"]
+  },
+  "gallery#home": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 4,
+            "desktop": 3,
+            "tablet": 3,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#home",
+      "GridSummary": "product-summary.shelf#home"
+    }
+  }
+  
 
 }

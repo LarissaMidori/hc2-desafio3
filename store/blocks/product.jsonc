@@ -1,0 +1,13 @@
+{
+  "store.product": {
+    "children": [
+      
+    ]
+  },
+  "product-images": {
+    "props": {
+      "showNavigationArrows": true,
+      "showPaginationDots": true
+    }
+  }
+}

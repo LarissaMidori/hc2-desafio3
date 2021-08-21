@@ -1,12 +1,13 @@
 {
-     "product-summary.shelf#home": {
+    "product-summary.shelf#home": {
         "children": [
-          "stack-layout#upmedal", /* mostra as imagens no slider dos produtos de tal colecao */
           "product-summary-name",
-          "flex-layout.col#productRating", /* avaliacao estrelas */
+          "product-summary-description",
+          "product-images",
+          /* "product-summary-image", */
           "product-summary-price",
-          "flex-layout.row#selling-price-savings", /* preco com desconto */
-          "add-to-cart-button"
+          "product-summary-sku-selector",
+          "product-summary-buy-button"
         ]
       }
 }

@@ -28,8 +28,7 @@
          "tab-list.item#promocoes": {
        "props": {
              "tabId": "menu1",
-             "label": "PROMOÇÕES",
-         "defaultActiveTab": true
+             "label": "PROMOÇÕES"
          /* "blockClass": "lista" */
            }
          },
