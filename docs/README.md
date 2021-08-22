@@ -14,8 +14,8 @@
 
 #### Imagens de algumas partes do layout: 
 
-<img src=”/assets/proj-tela1.jpg” height="350" width="auto" alt="tela inicial">
+<img src="/assets/proj-tela1.jpg" height="350" width="auto" alt="tela inicial">
 
-<img src=”/assets/proj-tela2.jpg” height="350" width="auto" alt="tela de um produto">
+<img src="/assets/proj-tela2.jpg" height="350" width="auto" alt="tela de um produto">
 
-<img src=”/assets/proj-tela3.jpg” height="350" width="auto" alt="imagem de um produto no carrinho">
+<img src="/assets/proj-tela3.jpg" height="350" width="auto" alt="imagem de um produto no carrinho">
