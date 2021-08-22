@@ -7,38 +7,12 @@
   },
   "header-layout.desktop": {
     "children": [
-      "sticky-layout#desktop",
-      "flex-layout.row#tab-layout"
-    ]
-  },
-  "flex-layout.row#tab-layout": {
-    "props": {
-      "blockClass": "tab-layout", /* serve para modificar o css no vtex.flex-layout.css */
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "vtex.tab-layout@0.x:tab-layout#menu"
-    ]
-    
-  },
-  "flex-layout.row#nav": { // criação da barra de navegação das páginas
-    "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "left",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "vtex.menu@2.x:menu#menu" //liga com a barra de menu de navegação que está no menu.jsonc
+      "sticky-layout#desktop"
     ]
   },
   "sticky-layout#desktop": {
     "props": {
-      "blockClass": "sticky-header"
+      "blockClass": "tabLayout"
     },
     "children": ["flex-layout.row#desktop"]
   },
@@ -48,14 +22,14 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "tabLayout"
     },
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      /* "locale-switcher",
-      "login", */
+      "flex-layout.col#spacer",
       "minicart.v2"
     ]
   },

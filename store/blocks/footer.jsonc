@@ -2,7 +2,10 @@
   "footer": {
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
-  "footer-layout.desktop": { 
+  "footer-layout.desktop":{
+    "children": ["sticky-layout#footer"]
+  },
+  "sticky-layout#footer": { 
     "children": [
       "flex-layout.row#footer"
     ]
@@ -13,15 +16,15 @@
     ]
   },
   "flex-layout.row#footer": { 
+      "props": {
+        "blockClass": "rodape"
+      },
     "children": [
       "flex-layout.col#user",
       "flex-layout.col#desafios",
       "flex-layout.col#loja",
       "flex-layout.col#suporte"
-    ],
-    "props": {
-      "blockClass": "rodape"
-    }
+    ]
   },
   "flex-layout.col#user":{
     "children": ["image#user", "rich-text#user"],
@@ -32,7 +35,7 @@
   },
   "image#user": {
     "props": {
-      "width": 24,
+      "width": 18,
       "src": "assets/user.svg",
       "blockClass": "footer"
     }
@@ -52,7 +55,7 @@
   },
   "image#desafios": {
     "props": {
-      "width": 24,
+      "width": 18,
       "src": "assets/desafio.svg",
       "blockClass": "footer"
     }
@@ -72,7 +75,7 @@
   },
   "image#loja": {
     "props": {
-      "width": 24,
+      "width": 20,
       "src": "assets/loja.svg",
       "blockClass": "footer"
     }
@@ -92,7 +95,7 @@
   },
   "image#suporte": {
     "props": {
-      "width": 24,
+      "width": 20,
       "src": "assets/whats.svg",
       "blockClass": "footer"
     }

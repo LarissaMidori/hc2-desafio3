@@ -1,6 +1,20 @@
-/* :global(.vtex-store__template) { */ /* cor do fundo da pagina */
-  /*   background: #303030;
-} */
+:global(.vtex-store__template) {  /* cor do fundo da pagina */
+     background: #303030;
+} 
+ 
+:global(.vtex-button) {  /* BOTAO DO PRODUTO */
+	background-color: #59ff00;
+  color: #3c3c3c;
+	border: none;
+}
+
+:global(.vtex-button):hover { /* BOTAO DO PRODUTO - HOVER */
+  background-color: #59ff00;
+  color: #3c3c3c;
+  opacity: 0.8;
+
+}
+
 .container { /* CONTAINER COM OS CARDS DOS PRODUTOS */
   width: 1000px;
   display: flex;
@@ -10,6 +24,7 @@
 
 .imageElement--footer {
   margin-top: 5px;
+  margin-bottom: -10px;
 }
 /*==== PREÇOS NOS CARDS DE PRODUTOS ==== */
 .sellingPrice{
@@ -22,8 +37,11 @@
   color: #fff; 
 }
 
+/* carousel */
+.carouselGaleryThumbs {
+  opacity: 0;
+}
 
-
-.productNameContainer {
-  color:fff;
+.carouselGaleryCursor{
+  transform: translate(-35px, 0px);
 }

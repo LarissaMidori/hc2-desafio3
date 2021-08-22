@@ -4,11 +4,9 @@
           "product-summary-name",
           "product-summary-description",
           "product-images",
-          "product-summary-image", 
           "product-summary-price",
-          "product-summary-sku-selector",
-          "add-to-cart-button#home"
-          /* "modal-trigger#home" */
+          "add-to-cart-button#home",
+          "modal-trigger#home"
         ],
         "props": {
             "blockClass": ["summary"] 

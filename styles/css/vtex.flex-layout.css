@@ -1,5 +1,5 @@
 /* ==== HEADER - TAB-LAYOUT*/
-.flexRow--tab-layout{ /* mudar a cor da barra do tab-layout */
+.flexRow--tabLayout{ /* mudar a cor da barra do tab-layout */
     background:#212121;
   }
 
@@ -13,5 +13,8 @@
 
   .flexRow--rodape {
     background: #424242;
+    width: 100%;
+    position: fixed;
+    top: 92%;
     
   }
