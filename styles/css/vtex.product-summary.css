@@ -3,16 +3,33 @@
     color:fff;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .nameContainer {
     color:fff;
 }
 
-.container { /* CARD DO PRODUTO */
+.container--summary { /* CARD DO PRODUTO */
+
     background: #424242;
     /* margin-left: 300px;
     margin-right: 250px; */
 }
 
-.clearLink {
-    width: 400;
+.element--summary { /* elementos dentro do bloco cinza de produtos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.productBrand { /* TITULOS DOS PRODUTOS */
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.334;
+    text-align: center;
+    padding: 5px 5px;
+
 }

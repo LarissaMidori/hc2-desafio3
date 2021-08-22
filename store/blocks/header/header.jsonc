@@ -23,7 +23,7 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true,
-      "blockClass": "tabLayout"
+      "blockClass": "topo"
     },
     "children": [
       "flex-layout.col#logo-desktop",

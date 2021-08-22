@@ -7,6 +7,7 @@
   "flex-layout.row#slider": { /* SLIDER BANNER */
     "children": ["slider-layout#principal"],
     "props": {
+      "blockClass": "slider-banner",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
@@ -14,7 +15,7 @@
       "fullWidth": true
     }
   },
-  "flex-layout.row#tab-layout": {
+  "flex-layout.row#tab-layout": { /* TAB LAYOUT */
     "props": {
       "blockClass": "tabLayout", /* serve para modificar o css no vtex.flex-layout.css */
       "horizontalAlign": "center",
@@ -26,17 +27,17 @@
       "tab-layout#menu"
     ] 
   },
-  "tab-layout#menu": {
+  "tab-layout#menu": { /* COMPONENTES PARA MONTAR O TAB LAYOUT */
     "children": [
         "tab-list#menu",
         "tab-content#menu"
     ],
     "props": {
         "blockClass": "menu",
-        "defaultActiveTabId": "promocoes"
+        "defaultActiveTabId": "promocoes" /* CATEGORIA DO MENU SELECIONADO AO CARREGAR A PAGE */
     }
 },
-"tab-list#menu": {
+"tab-list#menu": { /* MOSTRA A LISTA DOS LINKS DO MENU */
        "children": [
          "tab-list.item#promocoes",
          "tab-list.item#corinthians",
@@ -44,10 +45,7 @@
          "tab-list.item#signos",
          "tab-list.item#divertidos",
          "tab-list.item#7maravilhas",
-         "tab-list.item#guerreiros",
-         "tab-list.item#album1",
-         "tab-list.item#album2",
-         "tab-list.item#album3"
+         "tab-list.item#guerreiros"
        ],
        "props": {
          "blockClass": "listaMenu"
@@ -95,25 +93,7 @@
         "label": "GUERREIROS"
       }
     },
-    "tab-list.item#album1": {
-      "props": {
-        "tabId": "menu8",
-        "label": "ÁLBUM 1"
-      }
-    },
-    "tab-list.item#album2": {
-      "props": {
-        "tabId": "menu9",
-        "label": "ÁLBUM 2"
-      }
-    },
-    "tab-list.item#album3": {
-      "props": {
-        "tabId": "menu10",
-        "label": "ÁLBUM 3"
-      }
-    },
-    "tab-content#menu": {
+    "tab-content#menu": { /* CONTEUDO DE CADA ITEM DA CATEGORIA DO MENU */
       "children": [
         "tab-content.item#promocoes",
         "tab-content.item#corinthians",
@@ -122,7 +102,7 @@
       ]
       
     },
-    "tab-content.item#promocoes": {
+    "tab-content.item#promocoes": {  /* CATEGORIA PROMOCOES */
       "props": {
         "tabId": "promocoes"
       },
@@ -138,13 +118,13 @@
           "hideUnavailableItems": true,
           "skusFilter": "FIRST_AVAILABLE",
           "simulationBehavior": "skip" ,
-          "queryField": "upmedal",
+          "queryField": "UpMedal",
           "mapField": "ft" 
         }
       },
       "blocks": ["search-result-layout.desktop#home"]
     },
-    "tab-content.item#corinthians": {
+    "tab-content.item#corinthians": { /* CATEGORIA CORINTHIANS  */
       "props": {
         "tabId": "corinthians"
       },
@@ -166,7 +146,7 @@
       },
       "blocks": ["search-result-layout.desktop#home"]
     },
-    "tab-content.item#palmeiras": {
+    "tab-content.item#palmeiras": { /* CATEGORIA PALMEIRAS  */
       "props": {
         "tabId": "palmeiras"
       },
@@ -188,7 +168,7 @@
       },
       "blocks": ["search-result-layout.desktop#home"]
     },
-    "tab-content.item#signos": {
+    "tab-content.item#signos": { /* CATEGORIA SIGNOS  */
       "props": {
         "tabId": "signos"
       },
@@ -210,7 +190,19 @@
       },
       "blocks": ["search-result-layout.desktop#home"]
     },
-  "gallery#home": {
+    "search-result-layout.desktop#home" : {
+      "children":["flex-layout.row#result"],
+      "props": {
+        "preventRouteChange": true
+      }
+    },
+    "flex-layout.row#result": {
+      "children": ["search-content#home"]
+    },
+    "search-content#home": {
+      "blocks": ["gallery#home", "not-found"]
+    },
+  "gallery#home": { /* MOSTRA OS CARDS DE PRODUTOS */
     "props": {
       "layouts": [
         {

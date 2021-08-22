@@ -1,11 +1,12 @@
-:global(.vtex-store__template) {  /* cor do fundo da pagina */
-     background: #303030;
-} 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
  
 :global(.vtex-button) {  /* BOTAO DO PRODUTO */
+  width: 200px;
 	background-color: #59ff00;
   color: #3c3c3c;
 	border: none;
+  border-radius: 4px;
 }
 
 :global(.vtex-button):hover { /* BOTAO DO PRODUTO - HOVER */
@@ -16,13 +17,13 @@
 }
 
 .container { /* CONTAINER COM OS CARDS DOS PRODUTOS */
-  width: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto 20px;
 }
 
-.imageElement--footer {
+.imageElement--footer { /* FOOTER ICONS E TEXTO */
   margin-top: 5px;
   margin-bottom: -10px;
 }
@@ -38,10 +39,11 @@
 }
 
 /* carousel */
-.carouselGaleryThumbs {
+ .carouselGaleryThumbs {
   opacity: 0;
+  display:none; /* FAZ UM ELEMENTO "SUMIR" */
 }
 
-.carouselGaleryCursor{
-  transform: translate(-35px, 0px);
+.caretIcon { /* SETAS DOS PRODUTOS */
+  padding-top: 260px;
 }

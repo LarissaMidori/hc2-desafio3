@@ -1,3 +1,7 @@
-.searchResultContainer {
+.container {
     background: #303030;
+}
+
+.galleryItem {
+    justify-content: space-between;
 }

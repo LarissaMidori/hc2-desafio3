@@ -7,11 +7,12 @@
   "product-images": {
     "props": {
       "showNavigationArrows": true,
-      "showPaginationDots": true
+      "showPaginationDots": true,
+      "thumbnailsOrientation": "horizontal"
     }
   },
   
-    "vtex.product-highlights@2.x:product-highlights": {
+    /* "vtex.product-highlights@2.x:product-highlights": {
       "props": {
         "type": "teaser",
         "filter": {
@@ -26,7 +27,7 @@
         "message": "{highlightName}",
         "blockClass": "boleto"
       }
-    },
+    }, */
     "add-to-cart-button#home": {
       "props": {
         "onClickBehavior": "go-to-product-page",

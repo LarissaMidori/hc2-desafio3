@@ -1,3 +1,8 @@
+/* ==== HEADER - STICKY*/
+.flexRow--topo{ /* mudar a cor da barra do tab-layout */
+  background:#212121;
+}
+
 /* ==== HEADER - TAB-LAYOUT*/
 .flexRow--tabLayout{ /* mudar a cor da barra do tab-layout */
     background:#212121;
@@ -11,10 +16,20 @@
 
   /* ==== FOOTER ==== */
 
-  .flexRow--rodape {
-    background: #424242;
-    width: 100%;
-    position: fixed;
-    top: 92%;
+.flexRow--rodape {
+  background: #424242;
+  width: 100%;
+  position: fixed;
+  top: 92%;
     
   }
+
+.flexRow--topo :global(.vtex-button)  {
+    background: none;
+     border: none;
+   }
+
+.flexRowContent--slider-banner { /* COR DE FUNDO DO SLIDER */
+  background: #303030;
+}
+   
