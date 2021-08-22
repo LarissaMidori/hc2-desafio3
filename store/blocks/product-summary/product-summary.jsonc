@@ -1,15 +1,59 @@
-{
+{ /* ==== Mostra o que vai aparecer nos cards de produtos ==== */
     "product-summary.shelf#home": {
         "children": [
           "product-summary-name",
           "product-summary-description",
-          "product-images",
+          "product-images#summary",
           "product-summary-price",
-          "add-to-cart-button#home",
+          "add-to-cart-button",
           "modal-trigger#home"
         ],
         "props": {
             "blockClass": ["summary"] 
+        }
+      },
+      "product-images#summary": {
+        "props": {
+          "showNavigationArrows": true,
+          "showPaginationDots": true,
+          "thumbnailsOrientation": "horizontal"
+        }
+      },
+      "add-to-cart-button": {
+        "props": {
+          "onClickBehavior": "go-to-product-page",
+          "text": "Ver detalhes",
+          "blockClass": "cart"
+        }
+      },
+      "modal-trigger#home": {
+        "children": [
+          "modal-layout#home",
+          "rich-text#home"
+        ],
+        "props": {
+          "blockClass": "video-click"
+        }
+      },
+      "rich-text#home": {
+        "props": {
+          "text": "Vídeo"
+        }
+      },
+      "modal-layout#home": {
+        "children": [
+          "video#home"
+        ]
+      },
+      "video#home": {
+        "props": {
+          "width": "100%",
+        "height": "600px",
+        "loop": false,
+        "autoPlay": true,
+        "muted": false,
+        "src": "https://youtu.be/vVNF4OASRDI",
+        "blockClass": "video-upmedal"
         }
       }
 }

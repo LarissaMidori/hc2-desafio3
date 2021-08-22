@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-.triggerContainer :global(.vtex-modal-layout) {
-  color: aqua;
-}
  
 :global(.vtex-button) {  /* BOTAO DO PRODUTO */
   width: 200px;
@@ -46,7 +43,24 @@
   opacity: 0;
   display:none; /* FAZ UM ELEMENTO "SUMIR" */
 }
+.carouselGaleryThumbs--summary {
+  opacity: 0;
+  display:none; /* FAZ UM ELEMENTO "SUMIR" */
+}
+
 
 .caretIcon { /* SETAS DOS PRODUTOS */
-  padding-top: 260px;
+  width: 14px;
+  padding-top: 100px;
+  color: #fff;
+}
+.productImage { /* Espaço do conteudo da imagem */
+  margin-bottom:50px;
+}
+.swiperBullet { 
+  background: #7b7b7b;
+}
+
+.swiperBullet--active { /* BOTAO ATIVO DO SWIPER NO PRODUTO */
+  background: #59ff00;
 }
