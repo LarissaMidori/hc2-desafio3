@@ -14,7 +14,7 @@
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
-        "maxItemsPerPage": 10,
+        "maxItemsPerPage": 20,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -57,21 +57,6 @@
       "search-not-found-layout"
     ]
   },
-  /* "search-result-layout.desktop": {
-    "children": [
-      "breadcrumb.search",
-      "search-title.v2",
-      "search-fetch-previous",
-      "search-fetch-more",
-      "filter-navigator.v3",
-      "search-content",
-      "total-products.v2",
-      "order-by.v2"
-    ],
-    "props":{
-      "pagination": "showMore"
-    }
-  }, */
   "search-result-layout.desktop#home" : {
     "children":["flex-layout.row#result"],
     "props": {
@@ -91,8 +76,8 @@
         "name": "grid",
         "component": "GridSummary",
         "itemsPerRow": {
-          "(min-width:1300px)": 2,
-          "desktop": 2,
+          "(min-width:1300px)": 3,
+          "desktop": 3,
           "tablet": 2,
           "phone": 1
         }

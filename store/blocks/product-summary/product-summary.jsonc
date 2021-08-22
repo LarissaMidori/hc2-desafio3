@@ -1,5 +1,5 @@
 { /* ==== Mostra o que vai aparecer nos cards de produtos ==== */
-    "product-summary.shelf#home": {
+    "product-summary.shelf#home": { /* serve para estruturação do product-summary */
         "children": [
           "product-summary-name",
           "product-summary-description",
@@ -26,7 +26,7 @@
           "blockClass": "cart"
         }
       },
-      "modal-trigger#home": {
+      "modal-trigger#home": { /* modal que tem um texto que abre um video*/
         "children": [
           "modal-layout#home",
           "rich-text#home"

@@ -1,0 +1,10 @@
+/* css dos textos da parte dos produtos no carrinho */
+.productPrice { /* preco atual do produto */
+    color: #59ff00;
+}
+.productPriceCurrency { /* preco antigo */
+    color:#a9aaaa;
+}
+.productName {
+    color: #fff; /* nome do produto */
+}

@@ -60,11 +60,10 @@
   },
   "flex-layout.row#mobile": {
     "children": [
-      "drawer",
+      "drawer"/* ,
       "logo",
       "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
+      "minicart.v2" */
     ],
     "props": {
       "blockClass": "main-header-mobile",
@@ -74,6 +73,10 @@
     }
   },
   "drawer": {
-    "children": []
+    "children": 
+    [
+      "search-bar",
+      "minicart.v2"
+    ]
   }
 }

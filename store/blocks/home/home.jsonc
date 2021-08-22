@@ -117,7 +117,7 @@
     "search-result-layout.customQuery#promocoes": { /* search-result na home */
       "props": {
         "querySchema": {
-          "maxItemsPerPage": 8,
+          "maxItemsPerPage": 20,
           "hideUnavailableItems": true,
           "skusFilter": "FIRST_AVAILABLE",
           "simulationBehavior": "skip" ,
@@ -139,7 +139,7 @@
     "search-result-layout.customQuery#corinthians": { /* search-result na home */
       "props": {
         "querySchema": {
-          "maxItemsPerPage": 8,
+          "maxItemsPerPage": 20,
           "hideUnavailableItems": true,
           "skusFilter": "FIRST_AVAILABLE",
           "simulationBehavior": "skip" ,
@@ -161,7 +161,7 @@
     "search-result-layout.customQuery#palmeiras": { /* search-result na home */
       "props": {
         "querySchema": {
-          "maxItemsPerPage": 8,
+          "maxItemsPerPage": 20,
           "hideUnavailableItems": true,
           "skusFilter": "FIRST_AVAILABLE",
           "simulationBehavior": "skip" ,
@@ -183,7 +183,7 @@
     "search-result-layout.customQuery#signos": { /* search-result na home */
       "props": {
         "querySchema": {
-          "maxItemsPerPage": 8,
+          "maxItemsPerPage": 20,
           "hideUnavailableItems": true,
           "skusFilter": "FIRST_AVAILABLE",
           "simulationBehavior": "skip" ,
@@ -205,7 +205,7 @@
     "search-result-layout.customQuery#divertidos": { /* search-result na home */
       "props": {
         "querySchema": {
-          "maxItemsPerPage": 8,
+          "maxItemsPerPage": 20,
           "hideUnavailableItems": true,
           "skusFilter": "FIRST_AVAILABLE",
           "simulationBehavior": "skip" ,

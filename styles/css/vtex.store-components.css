@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
- 
 :global(.vtex-button) {  /* BOTAO DO PRODUTO */
   width: 200px;
 	background-color: #59ff00;
@@ -51,7 +50,7 @@
 
 .caretIcon { /* SETAS DOS PRODUTOS */
   width: 14px;
-  padding-top: 100px;
+  padding-top: 320px;
   color: #fff;
 }
 .productImage { /* Espaço do conteudo da imagem */
@@ -64,3 +63,5 @@
 .swiperBullet--active { /* BOTAO ATIVO DO SWIPER NO PRODUTO */
   background: #59ff00;
 }
+
+/* ==== barra de busca ==== */

@@ -1,4 +1,7 @@
 /* ==== HEADER - STICKY*/
+.flexRow { /* pagina que mostra os produtos com detalhe */
+  background: #303030;
+}
 .flexRow--topo{ /* mudar a cor da barra do tab-layout */
   background:#212121;
 }

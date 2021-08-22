@@ -23,15 +23,17 @@
 
 }
 
+.productNameContainer { /* container do titulo */
+   text-align: center; 
+}
+
 .productBrand { /* TITULOS DOS PRODUTOS */
     color: #fff;
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 1.334;
-    text-align: center;
     padding: 5px 5px;
-
 }
 
 .description {  /* TEXTO HIGHLIGHT QUE APARECE EM ALGUNS PRODUTOS */

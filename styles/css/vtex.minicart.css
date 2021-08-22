@@ -1,0 +1,15 @@
+.minicartContentContainer { 
+    background: #303030;
+    color: #fff;
+}
+
+.minicartProductListContainer {
+    background: #303030;
+    color: #fff;
+}
+
+.minicartTitle { /* Titulo do carrinho */
+    color: #59ff00;
+    text-align: center;
+}
+
