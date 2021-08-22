@@ -33,3 +33,16 @@
     padding: 5px 5px;
 
 }
+
+.description {  /* TEXTO HIGHLIGHT QUE APARECE EM ALGUNS PRODUTOS */
+    padding: 10px 0;
+    width: 100%;
+    background: #000;
+    color: #59ff00;
+    text-align: center;
+
+}
+/* .productHighlightText {
+    background: blueviolet;
+}
+ */

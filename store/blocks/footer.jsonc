@@ -50,7 +50,9 @@
     "children": ["image#desafios", "rich-text#desafios"],
     "props": {
       "horizontalAlign": "center",
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "blockClass": "link",
+      "url": "https://himawari--hiringcoders2021.myvtex.com/"
     }
   },
   "image#desafios": {

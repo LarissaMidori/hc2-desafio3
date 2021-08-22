@@ -77,19 +77,19 @@
     },
     "tab-list.item#divertidos": {
       "props": {
-        "tabId": "menu5",
+        "tabId": "divertidos",
         "label": "DIVERTIDOS"
       }
     },
     "tab-list.item#7maravilhas": {
       "props": {
-        "tabId": "menu6",
+        "tabId": "7maravilhas",
         "label": "7 MARAVILHAS"
       }
     },
     "tab-list.item#guerreiros": {
       "props": {
-        "tabId": "menu7",
+        "tabId": "guerreiros",
         "label": "GUERREIROS"
       }
     },
@@ -98,7 +98,10 @@
         "tab-content.item#promocoes",
         "tab-content.item#corinthians",
         "tab-content.item#palmeiras",
-        "tab-content.item#signos"
+        "tab-content.item#signos",
+        "tab-content.item#divertidos"/* ,
+        "tab-content.item#7maravilhas",
+        "tab-content.item#guerreiros" */
       ]
       
     },
@@ -184,8 +187,30 @@
           "hideUnavailableItems": true,
           "skusFilter": "FIRST_AVAILABLE",
           "simulationBehavior": "skip" ,
-          "queryField": "kit-upmedal/signos",
-          "mapField": "fq" 
+          "queryField": "signos",
+          "mapField": "ft" 
+        }
+      },
+      "blocks": ["search-result-layout.desktop#home"]
+    },
+    "tab-content.item#divertidos": { /* CATEGORIA DIVERTIDOS */
+      "props": {
+        "tabId": "divertidos"
+      },
+      "children": ["flex-layout.row#slider","flex-layout.row#divertidos"]
+    },
+    "flex-layout.row#divertidos": {
+      "children": ["search-result-layout.customQuery#divertidos"]
+    },
+    "search-result-layout.customQuery#divertidos": { /* search-result na home */
+      "props": {
+        "querySchema": {
+          "maxItemsPerPage": 8,
+          "hideUnavailableItems": true,
+          "skusFilter": "FIRST_AVAILABLE",
+          "simulationBehavior": "skip" ,
+          "queryField": "20/25",
+          "mapField": "c" 
         }
       },
       "blocks": ["search-result-layout.desktop#home"]

@@ -24,12 +24,18 @@
     
   }
 
-.flexRow--topo :global(.vtex-button)  {
+.flexRow--topo :global(.vtex-button)  { /* BOTAO CARRINHO */
     background: none;
      border: none;
-   }
+}
+
+.flexRow--topo :global(.vtex-button):hover  {
+  background: none;
+   border: none;
+ }
 
 .flexRowContent--slider-banner { /* COR DE FUNDO DO SLIDER */
   background: #303030;
 }
+
    

@@ -1,7 +1,6 @@
 {
   "store.product": {
     "children": [
-      
     ]
   },
   "product-images": {
@@ -11,23 +10,6 @@
       "thumbnailsOrientation": "horizontal"
     }
   },
-  
-    /* "vtex.product-highlights@2.x:product-highlights": {
-      "props": {
-        "type": "teaser",
-        "filter": {
-          "type": "show",
-          "highlightNames": ["10% Boleto"]
-        }
-      },
-      "children": ["product-highlight-text"]
-    },
-    "product-highlight-text": {
-      "props": {
-        "message": "{highlightName}",
-        "blockClass": "boleto"
-      }
-    }, */
     "add-to-cart-button#home": {
       "props": {
         "onClickBehavior": "go-to-product-page",
@@ -37,8 +19,8 @@
     },
     "modal-trigger#home": {
       "children": [
-        "rich-text#home",
-        "modal-layout#home"
+        "modal-layout#home",
+        "rich-text#home"
       ],
       "props": {
         "blockClass": "video-click"
