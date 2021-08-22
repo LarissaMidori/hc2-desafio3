@@ -1,5 +1,7 @@
 # Desafio3 - VTEX IO + AWS : E-commerce para o cliente UPMedal.com
 
+## Projeto realizado para um desafio proposto no programa Hiring Coders 2 🚀!
+
 ## Algumas das tecnologias utilizadas: 
 
 - NodeJS
